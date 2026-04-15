@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Social Links | Precious</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sekuya&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+  </head>
+  <body> 
+  <main class="card">
+    <div class="ctn">
+      <img src="IMG_20260411_063627.jpg" alt="Tutor Profile">
+      <h2>Precious Ifediora</h2>
+      <h4>Gwagwalada, FCT ABUJA.</h4>
+      <p>"Full-stack Developer & avid reader"</p>
+      <div class="social-links">
+        <a href="https://github.com/nexusauth0-cloud/" target="_blank" rel="noopener noreferrer" class="active">GitHub</a>
+        <a href="https://x.com/blockwise00/" target="_blank" rel="noopener noreferrer">Twitter(X)</a>
+        <a href="https://instagram.com/ifediorapreciouschidiebere/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://linkedin.com/in/ifediora-precious-a305773a7" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://wa.me/2348082563629?text=Hello%20Precious,%20I%20saw%20your%20portfolio%20and%20I'm%20interested%20in%20discussing%20a%20project%20with%20you!" target="_blank" rel="noopener noreferrer">Whatsapp</a>
+        <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
+      </div>
+    </div>
+  </main> 
+  <script>
+    const links = document.querySelectorAll('.social-links a');
+
+    links.forEach(link => {
+    link.addEventListener('mouseenter', () => {
+      // 1. Remove .active from whichever link currently has it
+    document.querySelector('.social-links a.active').classList.remove('active');
+      // 2. Add .active to the link you just hovered
+    link.classList.add('active');
+      });
+    });
+  </script>
+
+  </body>
+</html>
